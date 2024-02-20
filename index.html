@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TR Ticketing</title>
     <link
+      rel="shortcut icon"
+      href="./images/bus-icon.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
@@ -55,22 +60,32 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li><a>Item 1</a></li>
+                <li><a>Home</a></li>
 
-                <li><a>Item 3</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="btn btn-ghost text-3xl font-bold"
+              ><span class="text-green-600">TR</span> Travels</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
+              <li><a>Home</a></li>
 
-              <li><a>Item 3</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn">Button</a>
+            <a class="btn bg-[green]"
+              ><div class="flex justify-center items-center gap-2 text-white">
+                <img src="images/bus-icon.png" alt="" />BUS
+              </div></a
+            >
           </div>
         </div>
       </section>
@@ -194,25 +209,25 @@
                     class="border-black py-3 flex items-center justify-between border-b border-dashed"
                   >
                     <p class="font-semibold font-[Raleway]">Route</p>
-                    <h1 class="font-bold font-[Raleway]">Dhaka - Sylhet</h1>
+                    <h1 class="font-bold font-[Raleway]">Dhaka - Chittagong</h1>
                   </div>
                   <div
                     class="border-black py-3 flex items-center justify-between border-b border-dashed"
                   >
                     <p class="font-semibold font-[Raleway]">Departure Time</p>
-                    <h1 class="font-bold font-[Raleway]">9:00 PM</h1>
+                    <h1 class="font-bold font-[Raleway]">11:00 PM</h1>
                   </div>
                   <div
                     class="flex justify-between items-center my-5 flex-wrap gap-5"
                   >
                     <button class="btn font-bold font-[Raleway]">
-                      Boarding Point - Laxmipur
+                      Boarding Point - Kollanpur
                     </button>
                     <button class="btn font-bold font-[Raleway]">
-                      Dropping Point - Bogura
+                      Dropping Point - Dampara
                     </button>
                     <button class="btn font-bold font-[Raleway]">
-                      Est. Time - 11 Hour
+                      Est. Time - 6 Hour
                     </button>
                   </div>
                 </div>
@@ -628,6 +643,12 @@
       </section>
       <!-- ticket container end -->
     </main>
-    <footer></footer>
+    <footer
+      class="footer p-10 bg-neutral text-neutral-content flex justify-center content-center"
+    >
+      <h1 class="text-8xl text-center py-20 text-white">TR Travels</h1>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./utility.js"></script>
   </body>
 </html>
